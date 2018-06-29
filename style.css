@@ -1,0 +1,95 @@
+body{
+  text-align: center;
+  background-color: #9befeb;
+}
+
+/*Heading and intro*/
+.heading{
+  font-family: Coming Soon;
+}
+
+/*White box*/
+#survey-form{
+  background-color: white;
+  padding: 2rem; 0rem;
+  border-radius: 15px;
+  font-family: Karla;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40rem;
+}
+
+/*Survey Qs and As*/
+#body{
+  display: grid;
+  grid-template-columns: 20rem 20rem; 
+  grid-template-rows: 3rem 3rem 3rem 3rem 7rem 9rem 6rem;
+  text-align: left;
+}
+
+/*Survey Qs*/
+.subheading{
+  text-align: right;
+  padding-right: .5rem;
+}
+
+/*Empty text boxes*/
+input{
+  margin: .5rem
+}
+
+.dropdown:hover .dropbtn {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Dropdown menu*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: solid #9befeb;
+  max-width: 8rem;
+  padding-left: .5rem;
+}
+
+/*Dropdown content div*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: -.3rem;
+}
+
+/*Individual dropdown items*/
+.dropdown-content p {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/*Individual dropdown items, when hovering over p*/
+.dropdown-content p:hover {
+  background-color: #9befeb;
+  transition: .7s background-color;
+}
+
+/*Display dropdown when hovering over .dropdown*/
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+button{
+  margin-top: .5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+}
+
+button:hover{
+  border: solid #9befeb;
+  cursor: pointer;
+}
