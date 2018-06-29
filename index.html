@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Karla" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+<!--Heading-->
+<h1 id="title" class = "heading">New School Year Survey</h1>
+<form id = "survey-form">
+  <!--Description-->
+  <p id="description" class = "heading">Welcome to a new year! Tell your teacher and classmates about yourself.     </p>
+  
+  <!--Qs and As-->
+  <div id = "body">
+    
+    <!--Required fields-->
+    <p id = "name" class="subheading">*Name:</p>
+    <input type="text" placeholder="Enter your name" id="name-label" required ></input>
+    <p id = "email" class="subheading">*Email:</p>
+    <input type="text" placeholder="Enter your email" id="email-label" required pattern = "\w+@\w+.\w+"></input>
+    <p id = "number" class="subheading">*Age:</p>
+    <input type="number" placeholder="Enter your age" id="age-label" required pattern="\d+" ></input>
+  
+    <!--Best pet-->
+    <p id = "pet" class="subheading">Best pet:</p>
+    <div class="dropdown">
+    <p class="dropbtn">Choose one <i class="fas fa-angle-down"></i>&nbsp</p>
+    <div class="dropdown-content">
+        <p>Dogs</p>
+        <p>Puppies</p>
+        <p>Something inferior</p>
+    </div>
+    </div>
+  
+    <!--Do you like to read?-->
+    <p id = "read" class="subheading">Do you like to read? </p>
+      <div>
+        <label for="Yes"> 
+          <input id = "Yes" type="radio" name="reader">Yes!
+        </label>
+        </br>
+        <label for="No"> 
+          <input id = "No" type="radio" name="reader">Not really.
+        </label>
+        </br>
+        <label for="Kinda"> 
+          <input id = "Kinda" type="radio" name="reader">Sometimes.
+        </label>
+      </div>
+
+    <!--Other hobbies-->
+    <p id = "hobbies" class="subheading">What else do you like to do?</p>
+      <div>
+        <label for="TV">
+          <input id="TV" type="checkbox" name="personality">Watch T.V.
+        </label>
+        </br>
+        <label for="Draw">
+          <input id="Draw" type="checkbox" name="personality">Draw.
+        </label>
+        </br>
+        <label for="Music">
+          <input id="Music" type="checkbox" name="personality">Listen to music.
+        </label>
+        </br>
+        <label for="Help">
+          <input id="Help" type="checkbox" name="personality">Help my family.
+        </label>
+      </div>
+
+    <!--Goals-->
+    <p id = "learn" class="subheading">What do you want to learn this year?</p>
+      <textarea rows="4" cols="50">I want to learn...</textarea>
+</div>
+
+
+<button id="submit" type="submit">Submit!</button>
+</form>
+</body>
+</html>
